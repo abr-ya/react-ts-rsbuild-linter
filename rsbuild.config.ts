@@ -12,4 +12,19 @@ export default defineConfig({
     },
   },
   plugins: [pluginReact()],
+  tools: {
+    htmlPlugin: {
+      title: "RSBuild React App",
+      favicon: "./src/assets/icon.png",
+    },
+  },
+  moduleFederation: {
+    options: {
+      name: "remote2",
+      exposes: {
+        "./Test": "@components/Test/Test",
+      },
+      filename: "remoteEntry.js",
+    },
+  },
 });
