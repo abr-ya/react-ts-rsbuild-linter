@@ -1,6 +1,5 @@
 import "./App.css";
 import Test from "@components/Test/Test";
-import { ButtonGrey } from "@components/Button/Button.styles";
 import { Button } from "./components";
 
 const App = () => {
@@ -11,11 +10,8 @@ const App = () => {
       <Button design="green" ml={3}>
         Я кнопка
       </Button>
-      <ButtonGrey ml={3} my={3}>
+      <Button design="grey" ml={3} my={3}>
         Я серая кнопка
-      </ButtonGrey>
-      <Button design="grey" ml={3}>
-        Я тоже серая кнопка
       </Button>
     </div>
   );

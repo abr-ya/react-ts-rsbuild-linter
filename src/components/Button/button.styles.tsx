@@ -1,8 +1,7 @@
 import styled from "@emotion/styled/macro";
 import { css } from "@emotion/css/macro";
 import { color, background, space, fontWeight, border, variant } from "styled-system";
-
-import Button, { IButton } from "./Button";
+import { IButton } from "./button.interface";
 
 export const StyledButtonLabel = styled.span`
   display: inherit;
@@ -13,6 +12,7 @@ export const StyledButtonLabel = styled.span`
 `;
 
 export const StyledButton = styled.button<IButton>`
+  // old common part
   width: fit-content;
   min-width: 100px;
   white-space: nowrap;
@@ -65,22 +65,4 @@ export const StyledButton = styled.button<IButton>`
       },
     },
   })}
-`;
-
-// alt version design
-export const ButtonGreen = styled(Button)`
-  color: #fff;
-  background-color: #10bf6a;
-`;
-
-export const ButtonGrey = styled(Button)`
-  color: #4c4c4c;
-  background-color: #f2f3f6;
-  border: none;
-`;
-
-export const ButtonGhost = styled(Button)`
-  color: black;
-  background-color: transparent;
-  border: none;
 `;
