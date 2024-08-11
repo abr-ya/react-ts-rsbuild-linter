@@ -1,12 +1,13 @@
 import "./App.css";
 import Test from "@components/Test/Test";
-import { Button, ButtonGrey } from "@components/index";
+import { ButtonGrey } from "@components/Button/Button.styles";
+import { Button } from "./components";
 
 const App = () => {
   return (
     <div className="content">
       <h1>Rsbuild with React!</h1>
-      <Test />
+      <Test text="Текст через проп!" />
       <Button design="green" ml={3}>
         Я кнопка
       </Button>
