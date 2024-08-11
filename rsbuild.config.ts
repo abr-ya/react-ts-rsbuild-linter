@@ -36,6 +36,7 @@ export default defineConfig({
         "./Test": "@components/Test/Test",
       },
       filename: "remoteEntry.js",
+      shared: { react: { singleton: true, eager: true }, "react-dom": { singleton: true, eager: true } },
     },
   },
 });
