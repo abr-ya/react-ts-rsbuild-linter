@@ -10,17 +10,24 @@
     "fix": "eslint './src/**/*.{js,ts,tsx}' --fix"
   },
   "dependencies": {
+    "@emotion/css": "^11.13.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@rsbuild/core": "1.0.1-beta.3",
+    "@rsbuild/plugin-babel": "^1.0.1-beta.11",
     "@rsbuild/plugin-react": "1.0.1-beta.3",
     "@types/node": "^20.14.12",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/styled-system": "^5.1.22",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
+    "babel-plugin-macros": "^3.1.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",

@@ -1,5 +1,6 @@
 import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
+import { pluginBabel } from "@rsbuild/plugin-babel";
 
 // https://rsbuild.dev/guide/basic/configure-rsbuild#configure-rsbuild
 export default defineConfig({
@@ -11,7 +12,16 @@ export default defineConfig({
       "@components": "./src/components",
     },
   },
-  plugins: [pluginReact()],
+  plugins: [
+    pluginReact(),
+    pluginBabel({
+      babelLoaderOptions: (config) => {
+        // Add a Babel plugin
+        config.plugins ||= [];
+        config.plugins.push("macros");
+      },
+    }),
+  ],
   tools: {
     htmlPlugin: {
       title: "RSBuild React App",
