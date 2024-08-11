@@ -33,6 +33,7 @@ export default defineConfig({
       name: "remote2",
       exposes: {
         "./Button": "@components/Button/Button",
+        "./Button2": "@components/Button2/Button2",
         "./Test": "@components/Test/Test",
       },
       filename: "remoteEntry.js",
