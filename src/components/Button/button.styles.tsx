@@ -41,6 +41,11 @@ export const StyledButton = styled.button<IButton>`
     top: 1px;
   }
 
+  :hover {
+    border-color: transparent;
+    box-shadow: #0000003b 0 2px 10px 0;
+  }
+
   // new common part
   height: 40px;
   padding: 9px 20px;
